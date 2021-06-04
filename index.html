@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <body>
+
+      <div class="container">
+        <header class="header">
+          <h1  id="title" class="text-center" >Survey Form</h1>
+          <p id="description"
+           class="description text-center">
+           Thank You For Helping Us Improving out Platform</p>
+        </header>
+        <form id="survey-form">
+
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label><br>
+            <input type="text"
+            id="name"
+            class="form-control" 
+            placeholder="Enter your Full Name"
+            required="">
+          </div><br>
+
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label><br>
+          <input type="email"
+          id="email"
+          class="form-control"
+          placeholder="Enter Your Mail Address"
+          required="">
+       </div><br>
+
+        <div class="form-group">
+          <label id="number-label" for="number">Phone</label><br>
+          <input type="tel"
+          id="phone"
+          class="form-control"
+          placeholder="Enter your 10 digit phone number"
+          min="0"
+          max="12"
+          required><br>
+        </div>
+
+        <div class="form-group">
+          <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+          <input type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="120"
+            class="form-control"
+            placeholder="Age">
+        </div><br>
+
+        <div class="form-group">
+          <p>Which option describes the current you ?</p>
+          <select id="dropdown" 
+          name="role"
+          class="form-control"
+          required>
+          <option disabled selected value>Select the current you</option>
+          <option value="Student">Student</option>
+          <option value="Full-time">Full-time Employee</option>
+          <option value="Master">Teacher</option>
+          <option value="Parent">Parent</option>
+          <option value="other">Others</option>
+          <option value="PreferNo">Prefer not to say</option>
+          </select>
+        </div><br>
+
+        <div class="form-group">
+          <label>Would you recommend freeCodeCamp to a friend or learn yourself ? </label><br>
+
+          <label>
+          <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked>Definitely</label>
+
+          <label>
+          <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio">Maybe, Later</label>
+
+          <label
+          ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio">Not sure</label>
+        </div><br>
+
+        <div class="form-group">
+          <p> What's are your Goals ?<span 
+            class="clue">(Tick all that apply)
+          </span>
+        </p>
+
+          <label>
+            <input type="checkbox" 
+            name="choose" 
+            value="frontend-dev"
+            class="input-checkbox">
+            Frontend-Engineer
+          </label><br>
+
+          <label>
+            <input type="checkbox" 
+            name="choose" 
+            value="backend-dev"
+            class="input-checkbox">
+            Backend-Engineer
+          </label><br>
+
+          <label>
+            <input type="checkbox" 
+            name="choose" 
+            value="software-dev"
+            class="input-checkbox">
+            Software-Engineer
+          </label><br>
+
+          <label>
+            <input type="checkbox" 
+            name="choose" 
+            value="content"
+            class="input-checkbox">
+            Content-Creator
+          </label><br>
+
+          <label>
+            <input type="checkbox" 
+            name="choose" 
+            value="data-scientist"
+            class="input-checkbox">
+            Data-Scientist
+          </label><br>
+
+          <label>
+            <input type="checkbox" 
+            name="choose" 
+            value="competitive-coder"
+            class="input-checkbox">
+            Competitive-Coder
+          </label><br>
+
+          <label>
+            <input type="checkbox" 
+            name="choose" 
+            value="Hackaton"
+            class="input-checkbox">
+            Hackaton
+          </label><br>
+
+          <label>
+            <input type="checkbox" 
+            name="choose" 
+            value="Open-Source"
+            class="input-checkbox">
+            Contribute-Open-Source
+          </label><br>
+
+          <label>
+            <input type="checkbox" 
+            name="choose" 
+            value="freelancer"
+            class="input-checkbox">
+            Freelancer
+          </label><br>
+
+          <label>
+            <input type="checkbox" 
+            name="choose" 
+            value="hobbiest"
+            class="input-checkbox">
+            Hobbiest
+          </label><br>
+        </div><br>
+
+        <div>
+          <p>Any comments or Suggestions ?</p>
+          <textarea id="comments"
+           class="input-textarea"
+           name="comment"
+           placeholder="Enter Your comments here.."></textarea>
+        </div><br>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </form>
+    </body>
+  </head>
+</html>
